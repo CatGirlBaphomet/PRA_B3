@@ -13,21 +13,30 @@
                 <input type="text" name="titel" id="titel" class="form-input">
             </div>
             <div class="form-group">
-            <label for="beschrijving">Overige:</label>
+                <label for="beschrijving">Overige:</label>
                 <textarea name="beschrijving" id="beschrijving" class="form-input" rows="4"></textarea>
 
-            </div>
-            <div class="form-group">
-                <label for="afdeling">Capaciteit p/uur:</label>
-                <input type="number" min="0" name="capaciteit" id="capaciteit" class="form-input">
             </div>
             <div class="form-group">
                 <label for="afdeling">Afdeling:</label>
                 <input type="text" name="afdeling" id="afdeling" class="form-input">
             </div>
             <div class="form-group">
-                <label for="status">Status:</label>
-                <input type="text" name="status" id="status" class="form-input">
+            <label for="status">Status:</label>
+                <select name="status" id="status">
+                    <option value=""> - Wat is de status - </option>
+                    <option value="To Do">todo</option>
+                    <option value="Bezig">bezig</option>
+                    <option value="Klaar">klaar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="deadline">Deadline:</label>
+                <input type="date" name="deadline" id="deadline" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="user">User:</label>
+                <input type="text" name="user" id="user" class="form-input">
             </div>
             <input type="submit" value="Verstuur taak">
 
