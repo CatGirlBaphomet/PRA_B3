@@ -1,4 +1,5 @@
 <head>
+    <title>Taak Pagina</title>
     <title></title>
     <?php require_once '../head.php'; ?>
 </head>
