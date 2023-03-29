@@ -1,5 +1,5 @@
 <head>
-    <title></title>
+    <title>Create pagina</title>
     <?php require_once '../head.php'; ?>
 </head>   
 <body>
