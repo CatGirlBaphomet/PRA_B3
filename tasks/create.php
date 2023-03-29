@@ -4,7 +4,7 @@
 </head>   
 <body>
 <div class="container">
-        <h1>Nieuwe melding</h1>
+        <h1>Nieuwe Taak</h1>
 
         <form action="../backend/taskController.php" method="POST">
             <input type="hidden" name="action" value="create">
@@ -29,7 +29,7 @@
                 <label for="status">Status:</label>
                 <input type="text" name="status" id="status" class="form-input">
             </div>
-            <input type="submit" value="Verstuur melding">
+            <input type="submit" value="Verstuur taak">
 
         </form>
     </div>
