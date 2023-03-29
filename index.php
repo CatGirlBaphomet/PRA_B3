@@ -2,7 +2,7 @@
 <html lang="nl">
 
 <head>
-    <title>Taak Pagina</title>
+    <title>Home Pagina</title>
     <?php require_once 'head.php'; ?>
 </head>
 
