@@ -290,13 +290,16 @@ label{
 
 tr:nth-child(odd)
 {
-  background-color:#ebebeb;
+  background-color:#66B69E;
 }
 tr:first-child
 {
-  background-color:#d3d3d3;
+  background-color:#508E7B;
 }
 tr:hover
 {
-  background-color:#d3d3d3;
+  background-color:#508E7B;
+}
+body{
+  background-color: #66AC97;
 }
