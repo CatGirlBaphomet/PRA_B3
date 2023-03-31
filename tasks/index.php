@@ -6,7 +6,7 @@
 <body>
     
     <div class="container">
-    <a href="create.php">Create pagina &gt;</a>
+    <a href="create.php">Nieuwe Taak &gt;</a>
         <?php if(isset($_GET['msg']))
         {
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
@@ -27,7 +27,7 @@
             <th>status</th>
             <th>deadline</th>
             <th>user</th>
-            <th>id</th>
+            <th>aanpassen</th>
         </tr>
         <?php foreach($taken as $taak): ?>
             <tr>
