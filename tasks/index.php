@@ -6,7 +6,7 @@
 <body>
     
     <div class="container">
-    <a href="create.php"><i class="fa-regular fa-circle-plus"></i>Nieuwe Taak &gt;</a>
+    <a href="create.php"><i class="fa-solid fa-circle-plus"></i>Nieuwe Taak &gt;</a>
         <?php if(isset($_GET['msg']))
         {
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
