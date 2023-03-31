@@ -32,7 +32,7 @@
             </div>
             <div class="form-group">
                 <label for="titel">Afdeling:</label>
-                <input type="text" name="titel" id="titel" class="form-input" value="<?php echo $taak['afdeling']; ?>">
+                <input type="text" name="afdeling" id="afdeling" class="form-input" value="<?php echo $taak['afdeling']; ?>">
             </div>
             <div class="form-group">
             <label for="status">Status:</label>
