@@ -35,7 +35,13 @@ if($action == "create"){
 
     if(isset($errors))
     {
-        var_dump($errors);
+        echo "Je hebt de volgende errors: \n";
+        foreach ($errors as $error)
+        {
+            echo "<pre>";
+            echo $error,"\r\n";
+            echo "</pre>";
+        }
         die();
     }
 
