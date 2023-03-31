@@ -27,7 +27,7 @@
             <th>status</th>
             <th>deadline</th>
             <th>user</th>
-            <th>id</th>
+            <th>aanpassen</th>
         </tr>
         <?php foreach($taken as $taak): ?>
             <tr>
