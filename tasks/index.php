@@ -6,7 +6,7 @@
 <body>
     
     <div class="container">
-    <a href="create.php">Nieuwe Taak &gt;</a>
+    <a href="create.php"><i class="fa-regular fa-circle-plus"></i>Nieuwe Taak &gt;</a>
         <?php if(isset($_GET['msg']))
         {
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
@@ -27,7 +27,6 @@
             <th>status</th>
             <th>deadline</th>
             <th>user</th>
-            <th>aanpassen</th>
         </tr>
         <?php foreach($taken as $taak): ?>
             <tr>
@@ -37,7 +36,7 @@
                 <td><?php echo $taak['status']; ?></td>
                 <td><?php echo $taak['deadline']; ?></td>
                 <td><?php echo $taak['user']; ?></td>
-                <td><?php echo "<a href='edit.php?id={$taak['id']}'>" ?>aanpassen</td>
+                <td><?php echo "<a href='edit.php?id={$taak['id']}'>" ?><i class="fa-solid fa-pen-to-square"></i></td>
             </tr>
         <?php endforeach; ?>
     </table>
