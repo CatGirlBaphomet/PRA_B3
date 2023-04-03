@@ -103,7 +103,7 @@ if($action == "edit")
         }
         die();
     }
-    
+
     $titel = $_POST['titel'];
     $beschrijving = $_POST['beschrijving'];
     $afdeling = $_POST['afdeling'];
@@ -126,5 +126,20 @@ if($action == "edit")
     ]);
 
     header("Location:../tasks/index.php?msg=Taak geüpdatet");
+}
+if($action == "delete")
+{
+    $id = $_POST['id'];
+
+    require_once 'conn.php';
+    $query = "DELETE FROM taken WHERE id = :id";
+
+    $statement = $conn->prepare($query);
+
+    $statement->execute([
+        ":id" => $id
+    ]);
+
+    header("Location:../tasks/index.php?msg=Taak verwijderd");
 }
 ?>
