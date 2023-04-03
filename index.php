@@ -9,11 +9,9 @@
 <body>
     
     <div class="container">
-    <a href="tasks/index.php">Task Pagina &gt;</a>
     <br>
-    <a href="tasks/done.php">Complete Pagina &gt;</a>
-    <br>
-    <a href="tasks/notDone.php">Not Complete Pagina &gt;</a>
+    <h1>Taak Verdeling Pagina Developer Land</h1>
+    <a href="tasks/index.php">To-Do pagina &gt;</a>
     </div>
 
 </body>
