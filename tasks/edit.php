@@ -48,6 +48,10 @@
             </div>
 
             <input type="submit" value="Taak opslaan">
+
+            <input type="hidden" name="action" value="delete">
+            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <input type="submit" value="Verwijderen">
         </form>
     </div>
 </body>
