@@ -36,10 +36,10 @@
             </div>
             <div class="form-group">
             <label for="status">Status:</label>
-                <select name="status" id="status" value="<?php echo $taak['status'] ?>">
-                    <option value="To Do">To Do</option>
-                    <option value="Bezig">Bezig</option>
-                    <option value="Klaar">Klaar</option>
+                <select name="status" id="status">
+                    <option value="To Do" <?php if($taak['status']=="To Do") echo 'selected="selected"'; ?>>To Do</option>
+                    <option value="Bezig" <?php if($taak['status']=="Bezig") echo 'selected="selected"'; ?>>Bezig</option>
+                    <option value="Klaar" <?php if($taak['status']=="Klaar") echo 'selected="selected"'; ?>>Klaar</option>
                 </select>
             </div>
             <div class="form-group">
