@@ -24,10 +24,7 @@
             <div class="form-group">
             <label for="status">Status:</label>
                 <select name="status" id="status">
-                    <option value=""> - Wat is de status - </option>
-                    <option value="To Do">todo</option>
-                    <option value="Bezig">bezig</option>
-                    <option value="Klaar">klaar</option>
+                    <option value="To Do">To Do</option>
                 </select>
             </div>
             <div class="form-group">
