@@ -5,7 +5,9 @@
 <body>
     
     <div class="container">
+    <a href="index.php">To-Do pagina &gt;</a>
         <h1>Taken die klaar zijn</h1>
+        
         <?php if(isset($_GET['msg']))
         {
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
