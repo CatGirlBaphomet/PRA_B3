@@ -92,12 +92,6 @@ if($action == "edit")
     {
         $errors[] = "Vul de deadline in.";
     }
-    $user = $_POST['user'];
-    if(!is_numeric($user))
-    {
-        $errors[] = "Vul een geledige user in.";
-    }
-
     if(isset($errors))
     {
         echo "Je hebt de volgende errors: \n";
