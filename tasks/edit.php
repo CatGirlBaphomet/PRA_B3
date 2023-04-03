@@ -9,6 +9,7 @@
 <body>
     <div class="container">
     <div class="container1">
+    <a href="index.php">&lt; Terug</a>
     <a href="../index.php">Home pagina &gt;</a>
     </div>
 
