@@ -4,8 +4,9 @@
     <?php require_once '../head.php'; ?>
 </head>
 <body>
-    
     <div class="container">
+    <a href="done.php">Klaar Pagina &gt;</a>
+    <br>
     <a href="create.php"><i class="fa-solid fa-circle-plus"></i> Nieuwe Taak &gt;</a>
         <?php if(isset($_GET['msg']))
         {
@@ -14,7 +15,7 @@
 
         <?php
             require_once '../backend/conn.php';
-            $query = "SELECT * FROM taken";
+            $query = "SELECT * FROM taken WHERE status!='Klaar'";
             $statement = $conn->prepare($query);
             $statement->execute();
             $taken = $statement->fetchAll(PDO::FETCH_ASSOC);
