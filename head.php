@@ -5,6 +5,3 @@
 <link rel="stylesheet" href="<?php echo $base_url; ?>/css/normalize.css">
 <link rel="stylesheet" href="<?php echo $base_url; ?>/css/main.css">
 <script src="https://kit.fontawesome.com/90971cfe75.js" crossorigin="anonymous"></script>
-<div class="container">
-    <a href="../index.php">Home Pagina &gt;</a>
-    </div>
