@@ -9,9 +9,10 @@
 <body>
     
     <div class="container">
-    <br>
     <h1>Taak Verdeling Pagina Developer Land</h1>
+    <div class="container1">
     <a href="tasks/index.php">To-Do pagina &gt;</a>
+    </div>
     </div>
 
 </body>

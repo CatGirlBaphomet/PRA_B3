@@ -4,6 +4,9 @@
 </head>   
 <body>
 <div class="container">
+    <div class="container1">
+    <a href="../index.php">Home pagina &gt;</a>
+    </div>
         <h1>Nieuwe Taak</h1>
 
         <form action="../backend/taskController.php" method="POST">

@@ -8,6 +8,10 @@
 
 <body>
     <div class="container">
+    <div class="container1">
+    <a href="../index.php">Home pagina &gt;</a>
+    </div>
+
         <h1>Taken aanpassen</h1>
 
         <?php

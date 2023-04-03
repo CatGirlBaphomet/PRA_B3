@@ -4,10 +4,13 @@
     <?php require_once '../head.php'; ?>
 </head>
 <body>
+
     <div class="container">
-    <a href="done.php">Klaar Pagina &gt;</a>
-    <br>
-    <a href="create.php"><i class="fa-solid fa-circle-plus"></i> Nieuwe Taak &gt;</a>
+        <div class="container1">
+        <a href="../index.php">Home pagina &gt;</a>
+        <a href="done.php">Klaar Pagina &gt;</a>
+        <a href="create.php"><i class="fa-solid fa-circle-plus"></i> Nieuwe Taak &gt;</a>
+    </div>
         <?php if(isset($_GET['msg']))
         {
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";

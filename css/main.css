@@ -303,3 +303,24 @@ tr:hover
 body{
   background-color: #66AC97;
 }
+
+
+.container1 {
+  padding: 10px;
+  display: flex;;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container1 a{
+  text-decoration: none;
+  color: #000;
+  border: solid 1px #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.container a:hover{
+  background-color: #000;
+  color: #fff;
+}
