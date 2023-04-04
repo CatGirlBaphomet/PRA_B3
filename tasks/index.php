@@ -40,7 +40,10 @@
                 <td><?php echo $taak['status']; ?></td>
                 <td><?php echo $taak['deadline']; ?></td>
                 <td><?php echo $taak['user']; ?></td>
-                <td><?php echo "<a href='edit.php?id={$taak['id']}'>" ?><i class="fa-solid fa-pen-to-square"></i></td>
+                <td class="edit">
+                    <?php echo "<a href='edit.php?id={$taak['id']}'>" ?>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </td>
             </tr>
         <?php endforeach; ?>
     </table>

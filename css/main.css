@@ -296,7 +296,7 @@ tr:first-child
 {
   background-color:#508E7B;
 }
-tr:hover
+tr:hover td:not(.edit)
 {
   background-color:#508E7B;
 }
@@ -323,4 +323,12 @@ body{
 .container a:hover{
   background-color: #000;
   color: #fff;
+}
+
+td{
+  padding: 5px;
+}
+
+.delete{
+  margin: 10px 0;
 }
