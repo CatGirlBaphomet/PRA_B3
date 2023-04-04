@@ -18,8 +18,7 @@ if (!isset($_SESSION['user_id']))
 <body>
     <div class="container">
     <div class="container1">
-    <a href="index.php">&lt; Terug</a>
-    <a href="../index.php">Home pagina &gt;</a>
+    <a href="index.php"><i class="fa-regular fa-arrow-turn-down-left"></i> Terug</a>
     </div>
 
         <h1>Taken aanpassen</h1>

@@ -353,3 +353,7 @@ em{
   margin: 0 auto;
   width: 75%;
 }
+
+.edit:hover{
+  font-size: 20px;
+}

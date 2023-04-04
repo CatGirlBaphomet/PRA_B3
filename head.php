@@ -9,9 +9,9 @@
 <div class="container">
     <div class="container1">
         <?php if (isset($_SESSION['user_id'])): ?>
-            <a href="<?php echo $base_url; ?>/login/logout.php">Uitloggen</a>
+            <a href="<?php echo $base_url; ?>/login/logout.php"><i class="fa-solid fa-right-from-bracket"></i> Uitloggen</a>
         <?php else: ?>
-            <a href="<?php echo $base_url; ?>/login/login.php">Inloggen</a>
+            <a href="<?php echo $base_url; ?>/login/login.php"><i class="fa-solid fa-right-to-bracket"></i> Inloggen</a>
         <?php endif; ?>
     </div>
 </div>
