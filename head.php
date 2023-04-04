@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="<?php echo $base_url; ?>/css/normalize.css">
 <link rel="stylesheet" href="<?php echo $base_url; ?>/css/main.css">
 <script src="https://kit.fontawesome.com/90971cfe75.js" crossorigin="anonymous"></script>
+
 <div class="container">
     <div class="container1">
         <?php if (isset($_SESSION['user_id'])): ?>
@@ -14,3 +15,8 @@
         <?php endif; ?>
     </div>
 </div>
+<link
+    rel="stylesheet"
+    href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+>
+

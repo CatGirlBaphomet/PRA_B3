@@ -15,8 +15,7 @@ if (!isset($_SESSION['user_id']))
     
     <div class="container">
         <div class="container1">
-            <a href="../index.php">Home pagina &gt;</a>
-    <a href="index.php">To-Do pagina &gt;</a>
+        <a href="index.php"><i class="fa-regular fa-arrow-turn-down-left"></i> Terug</a>
     </div>
         <h1>Taken die klaar zijn</h1>
         
@@ -45,6 +44,10 @@ if (!isset($_SESSION['user_id']))
                     <td><?php echo $taak['beschrijving']; ?></td>
                     <td><?php echo $taak['afdeling']; ?></td>
                     <td><?php echo $taak['deadline']; ?></td>
+                    <td class="edit">
+                    <?php echo "<a href='edit.php?id={$taak['id']}'>" ?>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </td>
                 </tr>
         <?php } ?>
     </table>

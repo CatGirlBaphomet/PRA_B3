@@ -338,3 +338,18 @@ html {
 .container a{
   color: #000;
 }
+
+table{
+  display: flex;
+  justify-content: center;
+}
+
+em{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  margin: 0 auto;
+  width: 75%;
+}
