@@ -21,9 +21,8 @@
             <input type="text" name="username" placeholder="user">
             <input type="password" name="password" placeholder="pass">
             <!-- nog een submit-knop -->
-            
             <input type="submit" value=" log in">
-
+            <p> User: user1 , Password: password1 <p>
         </form>
     </div>
 
