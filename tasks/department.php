@@ -1,14 +1,16 @@
+<!doctype html>
+<html lang="nl">
+
 <head>
-    <title>Taak Pagina</title>
-    <title></title>
+    <title>Afdeling pagina</title>
     <?php require_once '../head.php'; ?>
 </head>
+
 <body>
     <div class="container">
         <div class="container1">
         <a href="../index.php">Home pagina &gt;</a>
         <a href="done.php">Klaar Pagina &gt;</a>
-        <a href="department.php">Afdeling Pagina &gt;</a>
         <a href="create.php"><i class="fa-solid fa-circle-plus"></i> Nieuwe Taak &gt;</a>
     </div>
         <?php if(isset($_GET['msg']))
@@ -17,10 +19,11 @@
         } ?>
 
         <?php
+            $afdeling = $_GET['afdeling'];
             require_once '../backend/conn.php';
-            $query = "SELECT * FROM taken WHERE status!='Klaar' ORDER BY deadline ASC";
+            $query = "SELECT * FROM taken  WHERE afdeling = :afdeling AND status != 'Klaar' ORDER BY deadline ASC";
             $statement = $conn->prepare($query);
-            $statement->execute();
+            $statement->execute([":afdeling" => $afdeling]);
             $taken = $statement->fetchAll(PDO::FETCH_ASSOC);
         ?>
     <table>
@@ -36,7 +39,7 @@
             <tr>
                 <td><?php echo $taak['titel']; ?></td>
                 <td><?php echo $taak['beschrijving']; ?></td>
-                <td><?php echo "<a href='department.php?afdeling={$taak['afdeling']}'>{$taak['afdeling']}</a>"; ?></td>
+                <td><?php echo $taak['afdeling']; ?></td>
                 <td><?php echo $taak['status']; ?></td>
                 <td><?php echo $taak['deadline']; ?></td>
                 <td><?php echo $taak['user']; ?></td>
