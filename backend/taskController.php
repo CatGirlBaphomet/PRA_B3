@@ -63,7 +63,7 @@ if($action == "create"){
         ":user"=>$user,
     ]);
 
-header("Location: ../tasks/index.php?msg=Taak opgeslagen");
+header("Location: ../tasks/index.php?msg=<em>Taak opgeslagen</em>");
 }
 if($action == "edit")
 {
@@ -125,7 +125,7 @@ if($action == "edit")
         ":id" => $id
     ]);
 
-    header("Location:../tasks/index.php?msg=Taak geüpdatet");
+    header("Location:../tasks/index.php?msg=<em>Taak geüpdatet</em>");
 }
 if($action == "delete")
 {
@@ -140,6 +140,6 @@ if($action == "delete")
         ":id" => $id
     ]);
 
-    header("Location:../tasks/index.php?msg=Taak verwijderd");
+    header("Location:../tasks/index.php?msg=<em>Taak verwijderd</em>");
 }
 ?>
