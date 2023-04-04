@@ -4,11 +4,11 @@
     <?php require_once '../head.php'; ?>
 </head>
 <body>
-
     <div class="container">
         <div class="container1">
         <a href="../index.php">Home pagina &gt;</a>
         <a href="done.php">Klaar Pagina &gt;</a>
+        <a href="department.php">Afdeling Pagina &gt;</a>
         <a href="create.php"><i class="fa-solid fa-circle-plus"></i> Nieuwe Taak &gt;</a>
     </div>
         <?php if(isset($_GET['msg']))
@@ -18,7 +18,7 @@
 
         <?php
             require_once '../backend/conn.php';
-            $query = "SELECT * FROM taken WHERE status!='Klaar'";
+            $query = "SELECT * FROM taken WHERE status!='Klaar' ORDER BY deadline ASC";
             $statement = $conn->prepare($query);
             $statement->execute();
             $taken = $statement->fetchAll(PDO::FETCH_ASSOC);
