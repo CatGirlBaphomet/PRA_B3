@@ -288,7 +288,7 @@ label{
   }
 }
 
-tr:nth-child(odd)
+tr:nth-child(odd) td:not(.edit)
 {
   background-color:#66B69E;
 }
