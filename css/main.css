@@ -303,7 +303,9 @@ tr:hover
 body{
   background-color: #66AC97;
 }
-
+td {
+  padding: 5px;
+}
 
 .container1 {
   padding: 10px;
@@ -323,4 +325,12 @@ body{
 .container a:hover{
   background-color: #000;
   color: #fff;
+}
+
+.delete {
+  margin: 10px 0;
+}
+
+html {
+  font-family: sans-serif;
 }
