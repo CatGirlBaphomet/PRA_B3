@@ -303,7 +303,9 @@ tr:hover td:not(.edit)
 body{
   background-color: #66AC97;
 }
-
+td {
+  padding: 5px;
+}
 
 .container1 {
   padding: 10px;
@@ -325,10 +327,10 @@ body{
   color: #fff;
 }
 
-td{
-  padding: 5px;
+.delete {
+  margin: 10px 0;
 }
 
-.delete{
-  margin: 10px 0;
+html {
+  font-family: sans-serif;
 }
