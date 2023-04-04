@@ -20,7 +20,7 @@
         <?php
             $afdeling = $_GET['afdeling'];
             require_once '../backend/conn.php';
-            $query = "SELECT * FROM taken  WHERE afdeling = :afdeling AND status != 'Klaar' ORDER BY deadline ASC";
+            $query = "SELECT * FROM taken  WHERE LOWER(afdeling = :afdeling) AND status != 'Klaar' ORDER BY deadline ASC";
             $statement = $conn->prepare($query);
             $statement->execute([":afdeling" => $afdeling]);
             $taken = $statement->fetchAll(PDO::FETCH_ASSOC);
