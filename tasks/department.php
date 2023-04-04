@@ -9,9 +9,8 @@
 <body>
     <div class="container">
         <div class="container1">
+        <a href="index.php">&lt; Terug</a>
         <a href="../index.php">Home pagina &gt;</a>
-        <a href="done.php">Klaar Pagina &gt;</a>
-        <a href="create.php"><i class="fa-solid fa-circle-plus"></i> Nieuwe Taak &gt;</a>
     </div>
         <?php if(isset($_GET['msg']))
         {
