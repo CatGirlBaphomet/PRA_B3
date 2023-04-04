@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id']))
+{
+    $msg = "Je moet eerst inloggen!";
+    
+}
+?>
 <!doctype html>
 <html lang="nl">
 
@@ -14,7 +22,6 @@
     <a href="tasks/index.php">To-Do pagina &gt;</a>
     </div>
     </div>
-
 </body>
 
 </html>
