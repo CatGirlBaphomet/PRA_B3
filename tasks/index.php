@@ -6,10 +6,10 @@
 <body>
     <div class="container">
         <div class="container1">
-        <a href="../index.php">Home pagina &gt;</a>
-        <a href="done.php">Klaar Pagina &gt;</a>
-        <a href="create.php"><i class="fa-solid fa-circle-plus"></i> Nieuwe Taak &gt;</a>
-    </div>
+            <a href="../index.php"><i class="fa-solid fa-house"></i> Home pagina</a>
+            <a href="done.php"><i class="fa-solid fa-check"></i> Klaar Pagina</a>
+            <a href="create.php"><i class="fa-solid fa-circle-plus"></i> Nieuwe Taak</a>
+        </div>
         <?php if(isset($_GET['msg']))
         {
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
@@ -22,15 +22,15 @@
             $statement->execute();
             $taken = $statement->fetchAll(PDO::FETCH_ASSOC);
         ?>
-    <table>
-        <tr>
-            <th>titel</th>
-            <th>beschrijving</th>
-            <th>afdeling</th>
-            <th>status</th>
-            <th>deadline</th>
-            <th>user</th>
-        </tr>
+        <table>
+            <tr>
+                <th>titel</th>
+                <th>beschrijving</th>
+                <th>afdeling</th>
+                <th>status</th>
+                <th>deadline</th>
+                <th>user</th>
+            </tr>
         <?php foreach($taken as $taak): ?>
             <tr>
                 <td><?php echo $taak['titel']; ?></td>
@@ -45,6 +45,6 @@
                 </td>
             </tr>
         <?php endforeach; ?>
-    </table>
+        </table>
     </div>  
 </body>

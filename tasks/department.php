@@ -9,9 +9,8 @@
 <body>
     <div class="container">
         <div class="container1">
-        <a href="index.php">&lt; Terug</a>
-        <a href="../index.php">Home pagina &gt;</a>
-    </div>
+            <a href="index.php"><i class="fa-regular fa-arrow-turn-down-left"></i> Terug</a>
+        </div>
         <?php if(isset($_GET['msg']))
         {
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
@@ -25,25 +24,29 @@
             $statement->execute([":afdeling" => $afdeling]);
             $taken = $statement->fetchAll(PDO::FETCH_ASSOC);
         ?>
-    <table>
-        <tr>
-            <th>titel</th>
-            <th>beschrijving</th>
-            <th>afdeling</th>
-            <th>status</th>
-            <th>deadline</th>
-            <th>user</th>
-        </tr>
-        <?php foreach($taken as $taak): ?>
+        <table>
             <tr>
-                <td><?php echo $taak['titel']; ?></td>
-                <td><?php echo $taak['beschrijving']; ?></td>
-                <td><?php echo $taak['afdeling']; ?></td>
-                <td><?php echo $taak['status']; ?></td>
-                <td><?php echo $taak['deadline']; ?></td>
-                <td><?php echo $taak['user']; ?></td>
+                <th>titel</th>
+                <th>beschrijving</th>
+                <th>afdeling</th>
+                <th>status</th>
+                <th>deadline</th>
+                <th>user</th>
             </tr>
-        <?php endforeach; ?>
-    </table>
+            <?php foreach($taken as $taak): ?>
+                <tr>
+                    <td><?php echo $taak['titel']; ?></td>
+                    <td><?php echo $taak['beschrijving']; ?></td>
+                    <td><?php echo $taak['afdeling']; ?></td>
+                    <td><?php echo $taak['status']; ?></td>
+                    <td><?php echo $taak['deadline']; ?></td>
+                    <td><?php echo $taak['user']; ?></td>
+                    <td class="edit">
+                        <?php echo "<a href='edit.php?id={$taak['id']}'>" ?>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
     </div>  
 </body>
