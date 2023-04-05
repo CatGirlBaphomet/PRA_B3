@@ -17,7 +17,7 @@ if (!isset($_SESSION['user_id']))
 <header>
 <div class="container">
     <div class="container1">
-        <a href="tasks/index.php">Taken Lijst</a>
+        <a href="tasks/index.php"><i class="fa-solid fa-list-check"></i> Taken Lijst</a>
         <?php if (isset($_SESSION['user_id'])): ?>
             <a href="<?php echo $base_url; ?>/login/logout.php"><i class="fa-solid fa-right-from-bracket"></i> Uitloggen</a>
         <?php else: ?>
