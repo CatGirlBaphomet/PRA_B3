@@ -11,12 +11,12 @@ if (!isset($_SESSION['user_id']))
     <title>Completed pagina</title>
     <?php require_once '../head.php'; ?>
 </head>
+
+<?php require_once '../header.php'; ?>
+
 <body>
     
     <div class="container">
-        <div class="container1">
-        <a href="index.php"><i class="fa-regular fa-arrow-turn-down-left"></i> Terug</a>
-    </div>
         <h1>Taken die klaar zijn</h1>
         
         <?php if(isset($_GET['msg']))

@@ -9,16 +9,14 @@ if (!isset($_SESSION['user_id']))
 ?>
 <head>
     <title>Taak Pagina</title>
-    <title></title>
     <?php require_once '../head.php'; ?>
 </head>
+
+<?php require_once '../header.php'; ?>
+
 <body>
     <div class="container">
-        <div class="container1">
-            <a href="../index.php"><i class="fa-solid fa-house"></i> Home pagina</a>
-            <a href="done.php"><i class="fa-solid fa-check"></i> Klaar Pagina</a>
-            <a href="create.php"><i class="fa-solid fa-circle-plus"></i> Nieuwe Taak</a>
-        </div>
+        <h1>Taken Lijst</h1>
         <?php if(isset($_GET['msg']))
         {
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
