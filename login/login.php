@@ -17,13 +17,16 @@
 
     <?php require_once '../head.php'; ?>
     <div class="container home">
-        <form action="../backend/loginController.php" method="POST">
-            <input type="text" name="username" placeholder="user">
-            <input type="password" name="password" placeholder="pass">
-            <!-- nog een submit-knop -->
-            <input type="submit" value=" log in">
-            <p> User: user1 , Password: password1 <p>
-        </form>
+        <div class="container1">
+            <a href="../index.php"><i class="fa-solid fa-house"></i> Home pagina</a>
+        </div>
+            <form action="../backend/loginController.php" method="POST">
+                <input type="text" name="username" placeholder="user">
+                <input type="password" name="password" placeholder="pass">
+                <!-- nog een submit-knop -->
+                <input type="submit" value=" log in">
+                <p> User: user1 , Password: password1 <p>
+            </form>
     </div>
 
 </body>
