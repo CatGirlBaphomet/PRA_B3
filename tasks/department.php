@@ -15,11 +15,10 @@ if (!isset($_SESSION['user_id']))
     <?php require_once '../head.php'; ?>
 </head>
 
+<?php require_once '../header.php'; ?>
+
 <body>
     <div class="container">
-        <div class="container1">
-            <a href="index.php"><i class="fa-regular fa-arrow-turn-down-left"></i> Terug</a>
-        </div>
         <?php if(isset($_GET['msg']))
         {
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";

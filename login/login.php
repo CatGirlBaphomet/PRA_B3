@@ -13,20 +13,24 @@
 	<link rel="stylesheet" href="<?php echo $base_url; ?>/css/main.css">
 </head>
 
+<header>
+    <div class="container1">
+        <a href="../index.php"><i class="fa-solid fa-house"></i> Home pagina</a>
+    </div>
+</header>
+
 <body>
 
     <?php require_once '../head.php'; ?>
     <div class="container home">
-        <div class="container1">
-            <a href="../index.php"><i class="fa-solid fa-house"></i> Home pagina</a>
-        </div>
-            <form action="../backend/loginController.php" method="POST">
-                <input type="text" name="username" placeholder="user">
-                <input type="password" name="password" placeholder="pass">
-                <!-- nog een submit-knop -->
-                <input type="submit" value=" log in">
-                <p> User: user1 , Password: password1 <p>
-            </form>
+        <form action="../backend/loginController.php" method="POST">
+            <input type="text" name="username" placeholder="user">
+            <input type="password" name="password" placeholder="pass">
+            <!-- nog een submit-knop -->
+            <input type="submit" value=" log in">
+            <p> User: user1 , Password: password1 <p>
+        </form>
+        <img src="../img/logo-big-fill-only.png" alt="Logo van Developerland">
     </div>
 
 </body>

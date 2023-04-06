@@ -14,22 +14,13 @@ if (!isset($_SESSION['user_id']))
     <?php require_once 'head.php'; ?>
 </head>
 
-<header>
-<div class="container">
-    <div class="container1">
-        <a href="tasks/index.php"><i class="fa-solid fa-list-check"></i> Taken Lijst</a>
-        <?php if (isset($_SESSION['user_id'])): ?>
-            <a href="<?php echo $base_url; ?>/login/logout.php"><i class="fa-solid fa-right-from-bracket"></i> Uitloggen</a>
-        <?php else: ?>
-            <a href="<?php echo $base_url; ?>/login/login.php"><i class="fa-solid fa-right-to-bracket"></i> Inloggen</a>
-        <?php endif; ?>
-    </div>
-</div>
-</header>
+
+<?php require_once 'header.php'; ?>
 
 <body>
     <div class="container">
         <h1>Taak Verdeling Pagina Developer Land</h1>
+        <img src="img/logo-big-fill-only.png" alt="Logo van Developerland">
     </div>
 </body>
 

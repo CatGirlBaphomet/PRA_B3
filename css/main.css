@@ -305,6 +305,7 @@ body{
 }
 td {
   padding: 5px;
+  text-align: center;
 }
 
 .container1 {
@@ -312,6 +313,7 @@ td {
   display: flex;;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .container1 a{
@@ -320,6 +322,7 @@ td {
   border: solid 1px #000;
   border-radius: 5px;
   padding: 5px 10px;
+  max-height: 30px;
 }
 
 .container1 a:hover{
@@ -352,6 +355,7 @@ em{
 .container{
   margin: 0 auto;
   width: 75%;
+  text-align: center;
 }
 
 .edit:hover{
@@ -360,6 +364,8 @@ em{
 header {
   width: 100%;
   background-color: #508E7B;
+  padding: 10px;
+  border-bottom: solid 2px;
 }
 
 header a {
@@ -370,4 +376,21 @@ h1{
 }
 form {
   text-align: center;
+}
+
+th{
+  min-width: 200px;
+  max-width: 201px;
+}
+
+.create a{
+  text-decoration: none;
+}
+
+td a{
+  color: #000;
+}
+
+.container1 img{
+  width: 200px;
 }
