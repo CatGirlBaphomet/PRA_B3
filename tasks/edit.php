@@ -15,6 +15,8 @@ if (!isset($_SESSION['user_id']))
     <?php require_once '../head.php'; ?>
 </head>
 
+<?php require_once '../header.php'?>
+
 <body>
     <div class="container">
     <div class="container1">
