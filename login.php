@@ -3,7 +3,7 @@
 
 <head>
     <title>SecretAnimal</title>
-    <?php require_once '../backend/config.php'; ?>
+    <?php require_once 'backend/config.php'; ?>
 
 	<meta charset="utf-8">
 	<meta name="description" content="StoringApp voor technische dienst van DeveloperLand">
@@ -20,17 +20,15 @@
 </header>
 
 <body>
-
-    <?php require_once '../head.php'; ?>
     <div class="container home">
-        <form action="../backend/loginController.php" method="POST">
+        <form action="backend/loginController.php" method="POST">
             <input type="text" name="username" placeholder="user">
             <input type="password" name="password" placeholder="pass">
             <!-- nog een submit-knop -->
             <input type="submit" value=" log in">
             <p> User: user1 , Password: password1 <p>
         </form>
-        <img src="../img/logo-big-fill-only.png" alt="Logo van Developerland">
+        <img src="img/logo-big-fill-only.png" alt="Logo van Developerland">
     </div>
 
 </body>
