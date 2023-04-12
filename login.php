@@ -15,7 +15,7 @@
 
 <header>
     <div class="container1">
-        <a href="../index.php"><i class="fa-solid fa-house"></i> Home pagina</a>
+        <a href="<?php echo $base_url; ?>/index.php"><i class="fa-solid fa-house"></i> Home pagina</a>
     </div>
 </header>
 
