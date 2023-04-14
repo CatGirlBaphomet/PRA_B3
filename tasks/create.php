@@ -48,7 +48,7 @@ if (!isset($_SESSION['user_id']))
             </div>
             <div class="form-group">
                 <label for="user">User:</label>
-                <input type="text" name="user" id="user" class="form-input">
+                <input type="text" name="user" id="user" class="form-input" value="<?php echo $_SESSION['user_id']; ?>" readonly>
             </div>
             <input type="submit" value="Verstuur taak">
 
