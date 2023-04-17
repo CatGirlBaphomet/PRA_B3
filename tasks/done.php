@@ -58,6 +58,9 @@ if (!isset($_SESSION['user_id']))
                     <td><?php echo $taak['color']; ?></td>
                     <td><?php echo $taak['user']; ?></td>
                     <td class="edit">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <td class="edit">
                         <?php echo "<a href='edit.php?id={$taak['id']}'>" ?>
                         <i class="fa-solid fa-pen-to-square"></i>
                     </td>
