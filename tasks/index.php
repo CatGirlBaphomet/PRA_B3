@@ -41,6 +41,7 @@ if (!isset($_SESSION['user_id']))
                 <th>afdeling</th>
                 <th>status</th>
                 <th>deadline</th>
+                <th>kleur</th>
                 <th>user</th>
             </tr>
         <?php foreach($taken as $taak): ?>
@@ -50,6 +51,7 @@ if (!isset($_SESSION['user_id']))
                 <td><?php echo "<a href='department.php?afdeling={$taak['afdeling']}'>{$taak['afdeling']}</a>"; ?></td>
                 <td><?php echo $taak['status']; ?></td>
                 <td><?php echo $taak['deadline']; ?></td>
+                <td><?php echo $taak['color']; ?></td>
                 <td><?php echo $taak['user']; ?></td>
                 <td class="edit">
                     <?php echo "<a href='edit.php?id={$taak['id']}'>" ?>
