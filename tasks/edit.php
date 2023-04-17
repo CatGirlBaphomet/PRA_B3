@@ -61,7 +61,17 @@ if (!isset($_SESSION['user_id']))
                 <label for="deadline">Deadline:</label>
                 <input type="date" name="deadline" id="deadline" class="form-input" value="<?php echo $taak['deadline']; ?>">
             </div>
-
+            <div class="form-group">
+            <label for="color">Status:</label>
+                <select name="color" id="color">
+                    <option value="rood" <?php if($taak['color']=="rood") echo 'selected="selected"'; ?>>Rood</option>
+                    <option value="blauw" <?php if($taak['color']=="blauw") echo 'selected="selected"'; ?>>Blauw</option>
+                    <option value="groen" <?php if($taak['color']=="groen") echo 'selected="selected"'; ?>>Groen</option>
+                    <option value="geel" <?php if($taak['color']=="geel") echo 'selected="selected"'; ?>>Geel</option>
+                    <option value="oranje" <?php if($taak['color']=="oranje") echo 'selected="selected"'; ?>>Oranje</option>
+                    <option value="paars" <?php if($taak['color']=="paars") echo 'selected="selected"'; ?>>Paars</option>
+                </select>
+            </div>
             <input type="submit" value="Taak opslaan">
         </form>
         <div class="delete">
