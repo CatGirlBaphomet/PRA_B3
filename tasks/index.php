@@ -61,6 +61,7 @@ if (!isset($_SESSION['user_id']))
                     <td class="edit">
                         <i 
                         style="color:<?php if($taak['color']=="rood") echo 'red';
+                        if($taak['color']=="geen") echo '#66AC97';
                         if($taak['color']=="blauw") echo 'blue';
                         if($taak['color']=="groen") echo 'green';
                         if($taak['color']=="geel") echo 'yellow';
