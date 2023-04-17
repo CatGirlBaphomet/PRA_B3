@@ -63,7 +63,7 @@ if (!isset($_SESSION['user_id']))
             </div>
 
             <div class="form-group">
-            <label for="color">Status:</label>
+            <label for="color">Kleur:</label>
                 <select name="color" id="color">
                     <option value="rood" <?php if($taak['color']=="rood") echo 'selected="selected"'; ?>>Rood</option>
                     <option value="blauw" <?php if($taak['color']=="blauw") echo 'selected="selected"'; ?>>Blauw</option>
