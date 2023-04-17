@@ -42,7 +42,6 @@ if (!isset($_SESSION['user_id']))
                     <th>afdeling</th>
                     <th>status</th>
                     <th>deadline</th>
-                    <th>kleur</th>
                     <th>user</th>
                 </tr>
                 <?php foreach($taken as $taak): ?>
@@ -56,10 +55,17 @@ if (!isset($_SESSION['user_id']))
                         <option value="Klaar" <?php if($taak['status']=="Klaar") echo 'selected="selected"'; ?>>Klaar</option>
                     </select></td>
                     <td><?php echo $taak['deadline']; ?></td>
-                    <td><?php echo $taak['color']; ?></td>
                     <td><?php echo $taak['user']; ?></td>
+                    
                     <td class="edit">
-                        <i class="fa-solid fa-circle"></i>
+                        <i 
+                        style="color:<?php if($taak['color']=="rood") echo 'red';
+                        if($taak['color']=="blauw") echo 'blue';
+                        if($taak['color']=="groen") echo 'green';
+                        if($taak['color']=="geel") echo 'yellow';
+                        if($taak['color']=="oranje") echo 'orange';
+                        if($taak['color']=="paars") echo 'purple';?>"
+                        class="fa-solid fa-circle"></i>
                     </div>
                     <td class="edit">
                         <?php echo "<a href='edit.php?id={$taak['id']}'>" ?>
