@@ -62,13 +62,13 @@ if (!isset($_SESSION['user_id']))
                 <input type="date" name="deadline" id="deadline" class="form-input" value="<?php echo $taak['deadline']; ?>">
             </div>
 
-            <input type="submit" value="Taak opslaan">
+            <input type="submit" value="Taak opslaan" id="button">
         </form>
         <div class="delete">
             <form action="../backend/taskController.php" method="POST">
                 <input type="hidden" name="action" value="delete">
                 <input type="hidden" name="id" value="<?php echo $id; ?>">
-                <input type="submit" value="Verwijderen">
+                <input type="submit" value="Verwijderen" id="button">
             </form>
         </div>
     </div>

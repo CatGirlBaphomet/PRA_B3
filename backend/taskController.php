@@ -127,6 +127,21 @@ if($action == "edit")
 
     header("Location:../tasks/index.php?msg=<em>Taak geüpdatet</em>");
 }
+if($action == "editStatus")
+{
+    $status = $_POST['status'];
+
+    require_once 'conn.php';
+    $query = "UPDATE taken SET status = :status";
+    
+    $statement = $conn->prepare($query);
+    
+    $statement->execute([
+        ":status" => $status,
+    ]);
+
+    header("Location:../tasks/index.php?");
+}
 if($action == "delete")
 {
     $id = $_POST['id'];
