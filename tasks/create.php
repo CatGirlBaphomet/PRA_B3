@@ -56,6 +56,7 @@ if (!isset($_SESSION['user_id']))
                     <option value="geel">Geel</option>
                     <option value="oranje">Oranje</option>
                     <option value="paars">Paars</option>
+                    <option value="geen">Geen</option>
                 </select>
             </div>
             <div class="form-group">

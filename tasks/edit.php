@@ -71,6 +71,7 @@ if (!isset($_SESSION['user_id']))
                     <option value="geel" <?php if($taak['color']=="geel") echo 'selected="selected"'; ?>>Geel</option>
                     <option value="oranje" <?php if($taak['color']=="oranje") echo 'selected="selected"'; ?>>Oranje</option>
                     <option value="paars" <?php if($taak['color']=="paars") echo 'selected="selected"'; ?>>Paars</option>
+                    <option value="geen" <?php if($taak['color']=="geen") echo 'selected="selected"'; ?>>Geen</option>
                 </select>
             </div>
             <div class="form-group">
