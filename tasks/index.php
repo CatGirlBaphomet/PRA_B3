@@ -57,6 +57,7 @@ if (!isset($_SESSION['user_id']))
                         <option value="Klaar" <?php if($taak['status']=="Klaar") echo 'selected="selected"'; ?>>Klaar</option>
                     </select></td>
                     <td><?php echo $taak['deadline']; ?></td>
+                    <td><?php echo $taak['color']; ?></td>
                     <td><?php echo $taak['user']; ?></td>
                     <td class="edit">
                         <?php echo "<a href='edit.php?id={$taak['id']}'>" ?>
