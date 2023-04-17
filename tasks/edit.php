@@ -72,6 +72,10 @@ if (!isset($_SESSION['user_id']))
                     <option value="paars" <?php if($taak['color']=="paars") echo 'selected="selected"'; ?>>Paars</option>
                 </select>
             </div>
+            <div class="form-group">
+                <label for="user">User:</label>
+                <input type="text" name="user" id="user" class="form-input" value="<?php echo $taak['user']; ?>">
+            </div>
             <input type="submit" value="Taak opslaan">
         </form>
         <div class="delete">
@@ -83,5 +87,4 @@ if (!isset($_SESSION['user_id']))
         </div>
     </div>
 </body>
-
 </html>
