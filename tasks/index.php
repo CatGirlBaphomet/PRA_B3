@@ -44,6 +44,7 @@ if (!isset($_SESSION['user_id']))
                     <th>afdeling</th>
                     <th>status</th>
                     <th>deadline</th>
+                    <th>kleur</th>
                     <th>user</th>
                 </tr>
                 <?php foreach($taken as $taak): ?>
