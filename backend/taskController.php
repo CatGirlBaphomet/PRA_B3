@@ -30,7 +30,12 @@ if($action == "create"){
     $color = $_POST['color'];
     if(empty($color))
     {
-        $errors[] = "Vul de deadline in.";
+        $errors[] = "kies een kleur.";
+    }
+    $color = $_POST['color'];
+    if($color=="-Kies een kleur-")
+    {
+        $errors[] = "kies een geldige kleur.";
     }
     $user = $_POST['user'];
     if(!is_numeric($user))
