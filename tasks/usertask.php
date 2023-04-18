@@ -27,7 +27,7 @@ if (!isset($_SESSION['user_id']))
         <?php
             $user = $_SESSION['user_id'];
             require_once '../backend/conn.php';
-            $query = "SELECT * FROM taken  WHERE user = :user";
+            $query = "SELECT * FROM taken  WHERE user = :user ORDER BY deadline ASC";
             $statement = $conn->prepare($query);
             $statement->execute([':user' => $user]);
             $taken = $statement->fetchAll(PDO::FETCH_ASSOC);
