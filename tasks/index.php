@@ -41,7 +41,6 @@ if (!isset($_SESSION['user_id']))
             <th>afdeling</th>
             <th>status</th>
             <th>deadline</th>
-            <th>kleur</th>
             <th>user</th>
         </tr>
         <?php foreach($taken as $taak): ?>
@@ -52,28 +51,24 @@ if (!isset($_SESSION['user_id']))
                 <form method="POST" action="../backend/taskController.php">
                 <input type="hidden" name="action" value="editStatus">
                 <input type="hidden" name="id" value="<?php echo $taak['id']?>">
-                <td><select name="status" id="status">
+                <td><select name="status" id="status" onchange="submit();">
                     <option value="To Do" <?php if($taak['status']=="To Do") echo 'selected="selected"'; ?>>To Do</option>
                     <option value="Bezig" <?php if($taak['status']=="Bezig") echo 'selected="selected"'; ?>>Bezig</option>
                     <option value="Klaar" <?php if($taak['status']=="Klaar") echo 'selected="selected"'; ?>>Klaar</option>
-                </select>
-                <div class="editStatus">
-                    <input type="submit" value="Status Bijwerken" id="button">
-                </div></td>
+                </select></td>
                 </form>
                 <td><?php echo $taak['deadline']; ?></td>
-                <td><?php echo $taak['color']; ?></td>
                 <td><?php echo $taak['user']; ?></td>
                 <td class="edit">
                     <i 
-                        style="color:<?php if($taak['color']=="rood") echo 'red';
-                        if($taak['color']=="geen") echo '#66AC97';
-                        if($taak['color']=="blauw") echo 'blue';
-                        if($taak['color']=="groen") echo 'green';
-                        if($taak['color']=="geel") echo 'yellow';
-                        if($taak['color']=="oranje") echo 'orange';
-                        if($taak['color']=="paars") echo 'purple';?>"
-                        class="fa-solid fa-circle"></i>
+                    style="color:<?php if($taak['color']=="rood") echo 'red';
+                    if($taak['color']=="geen") echo '#66AC97';
+                    if($taak['color']=="blauw") echo 'blue';
+                    if($taak['color']=="groen") echo 'green';
+                    if($taak['color']=="geel") echo 'yellow';
+                    if($taak['color']=="oranje") echo 'orange';
+                    if($taak['color']=="paars") echo 'purple';?>"
+                    class="fa-solid fa-circle"></i>
                 </td>
                 <td class="edit">
                     <?php echo "<a href='edit.php?id={$taak['id']}'>" ?>
