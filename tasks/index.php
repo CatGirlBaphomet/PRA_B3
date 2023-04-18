@@ -65,7 +65,15 @@ if (!isset($_SESSION['user_id']))
                 <td><?php echo $taak['color']; ?></td>
                 <td><?php echo $taak['user']; ?></td>
                 <td class="edit">
-                    <i class="fa-solid fa-circle"></i>
+                    <i 
+                        style="color:<?php if($taak['color']=="rood") echo 'red';
+                        if($taak['color']=="geen") echo '#66AC97';
+                        if($taak['color']=="blauw") echo 'blue';
+                        if($taak['color']=="groen") echo 'green';
+                        if($taak['color']=="geel") echo 'yellow';
+                        if($taak['color']=="oranje") echo 'orange';
+                        if($taak['color']=="paars") echo 'purple';?>"
+                        class="fa-solid fa-circle"></i>
                 </td>
                 <td class="edit">
                     <?php echo "<a href='edit.php?id={$taak['id']}'>" ?>
