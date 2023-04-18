@@ -2,18 +2,40 @@
 $action = $_POST['action'];
 if($action == "registreren")
     $username = $_POST['username'];
+    $password = $_POST['password'];
+    
     if(empty($username))
     {
         $errors[] = "Vul een gebruikersnaam in.";
     }
-    $password = $_POST['password'];
+
     if(empty($password))
     {
         $errors[] = "Vul een wachtwoord in.";
     }
-    if($username == $username || $username == $naam)
+
+    require_once 'conn.php';
+
+	$query = "SELECT * FROM users WHERE username = :username";
+	$statement = $conn->prepare($query);
+	$statement->bindParam(":username", $username);
+	$statement->execute();
+
+    if($statement->rowCount() > 0)
     {
         $errors[] = "Een account met deze naam bestaat al, kies alstublieft een andere naam.";
+    }
+
+    if(isset($errors))
+    {
+        echo "Je hebt de volgende errors: \n";
+        foreach ($errors as $error)
+        {
+            echo "<pre>";
+            echo $error,"\r\n";
+            echo "</pre>";
+        }
+        die();
     }
     
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);  

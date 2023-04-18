@@ -23,8 +23,8 @@
     <div class="container home">
         <form action="backend/registratieController.php" method="POST">
             <input type="hidden" name="action" value="registreren">
-            <input type="text" name="username" placeholder="user">
-            <input type="password" name="password" placeholder="pass">
+            <input type="text" id="username" name="username" placeholder="user">
+            <input type="password" id="password" name="password" placeholder="pass">
             <!-- nog een submit-knop -->
             <input type="submit" value="registreren">
         </form>
