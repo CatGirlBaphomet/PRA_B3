@@ -21,15 +21,15 @@
 
 <body>
     <div class="container home">
-        <form action="backend/loginController.php" method="POST">
+        <form action="backend/registratieController.php" method="POST">
+            <input type="hidden" name="action" value="registreren">
             <input type="text" name="username" placeholder="user">
             <input type="password" name="password" placeholder="pass">
             <!-- nog een submit-knop -->
-            <input type="submit" value=" log in">
-            <p><a href="registratie.php">Als u nog geen account hebt klik hier</a></p>
+            <input type="submit" value="registreren">
         </form>
         <img src="img/logo-big-fill-only.png" alt="Logo van Developerland">
-    </div>
+    </div>  
 
 </body>
 
