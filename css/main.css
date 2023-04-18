@@ -300,6 +300,7 @@ tr:hover td:not(.edit)
 {
   background-color:#508E7B;
 }
+
 body{
   background-color: #66AC97;
 }
@@ -393,4 +394,15 @@ td a{
 
 .container1 img{
   width: 200px;
+}
+
+.editStatus{
+  margin: 20px;
+}
+
+#button {
+  background-color: #508E7B;
+  border: solid 1px #000;
+  border-radius: 5px;
+  padding: 5px 10px;
 }

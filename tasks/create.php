@@ -47,6 +47,19 @@ if (!isset($_SESSION['user_id']))
                 <input type="date" name="deadline" id="deadline" class="form-input">
             </div>
             <div class="form-group">
+            <label for="color">Kleur:</label>
+                <select name="color" id="color">
+                    <option value="-Kies een kleur-">-Kies een kleur-</option>
+                    <option value="rood">Rood</option>
+                    <option value="blauw">Blauw</option>
+                    <option value="groen">Groen</option>
+                    <option value="geel">Geel</option>
+                    <option value="oranje">Oranje</option>
+                    <option value="paars">Paars</option>
+                    <option value="geen">Geen</option>
+                </select>
+            </div>
+            <div class="form-group">
                 <label for="user">User:</label>
                 <input type="text" name="user" id="user" class="form-input" value="<?php echo $_SESSION['user_id']; ?>" readonly>
             </div>

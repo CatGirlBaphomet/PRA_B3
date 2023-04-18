@@ -62,16 +62,31 @@ if (!isset($_SESSION['user_id']))
                 <input type="date" name="deadline" id="deadline" class="form-input" value="<?php echo $taak['deadline']; ?>">
             </div>
 
-            <input type="submit" value="Taak opslaan">
+            <div class="form-group">
+            <label for="color">Kleur:</label>
+                <select name="color" id="color">
+                    <option value="rood" <?php if($taak['color']=="rood") echo 'selected="selected"'; ?>>Rood</option>
+                    <option value="blauw" <?php if($taak['color']=="blauw") echo 'selected="selected"'; ?>>Blauw</option>
+                    <option value="groen" <?php if($taak['color']=="groen") echo 'selected="selected"'; ?>>Groen</option>
+                    <option value="geel" <?php if($taak['color']=="geel") echo 'selected="selected"'; ?>>Geel</option>
+                    <option value="oranje" <?php if($taak['color']=="oranje") echo 'selected="selected"'; ?>>Oranje</option>
+                    <option value="paars" <?php if($taak['color']=="paars") echo 'selected="selected"'; ?>>Paars</option>
+                    <option value="geen" <?php if($taak['color']=="geen") echo 'selected="selected"'; ?>>Geen</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="user">User:</label>
+                <input type="text" name="user" id="user" class="form-input" value="<?php echo $taak['user']; ?>">
+            </div>
+            <input type="submit" value="Taak opslaan" id="button">
         </form>
         <div class="delete">
             <form action="../backend/taskController.php" method="POST">
                 <input type="hidden" name="action" value="delete">
                 <input type="hidden" name="id" value="<?php echo $id; ?>">
-                <input type="submit" value="Verwijderen">
+                <input type="submit" value="Verwijderen" id="button">
             </form>
         </div>
     </div>
 </body>
-
 </html>
