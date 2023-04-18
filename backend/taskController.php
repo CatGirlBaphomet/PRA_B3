@@ -140,14 +140,16 @@ if($action == "edit")
 if($action == "editStatus")
 {
     $status = $_POST['status'];
+    $id = $_POST['id'];
 
     require_once 'conn.php';
-    $query = "UPDATE taken SET status = :status";
-    
+    $query = "UPDATE taken SET status = :status WHERE id = :id";
+
     $statement = $conn->prepare($query);
     
     $statement->execute([
         ":status" => $status,
+        ":id" => $id
     ]);
 
     header("Location:../tasks/index.php?");
@@ -162,6 +164,7 @@ if($action == "delete")
     $statement = $conn->prepare($query);
 
     $statement->execute([
+
         ":id" => $id
     ]);
 

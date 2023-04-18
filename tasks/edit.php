@@ -43,7 +43,7 @@ if (!isset($_SESSION['user_id']))
             </div>
             <div class="form-group">
                 <label for="titel">Beschrijving:</label>
-                <textarea name="beschrijving" id="beschrijving" class="form-input" rows="4"><?php echo $taak['beschrijving'] ?></textarea>
+                <textarea name="beschrijving" id="beschrijving" class="form-input" rows="4"><?php echo $taak['beschrijving']; ?></textarea>
             </div>
             <div class="form-group">
                 <label for="titel">Afdeling:</label>
