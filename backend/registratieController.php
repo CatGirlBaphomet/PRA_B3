@@ -11,6 +11,10 @@ if($action == "registreren")
     {
         $errors[] = "Vul een wachtwoord in.";
     }
+    if($username == $username || $username == $naam)
+    {
+        $errors[] = "Een account met deze naam bestaat al, kies alstublieft een andere naam.";
+    }
     
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);  
     
