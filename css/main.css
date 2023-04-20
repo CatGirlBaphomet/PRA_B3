@@ -410,3 +410,9 @@ td a{
 .create:hover {
   text-decoration: underline;
 }
+
+#dropdown {
+  background-color: #508E7B;
+  border: solid 1px #000;
+  border-radius: 5px;
+}

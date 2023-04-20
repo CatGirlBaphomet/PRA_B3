@@ -51,7 +51,7 @@ if (!isset($_SESSION['user_id']))
                 <form method="POST" action="../backend/taskController.php">
                 <input type="hidden" name="action" value="editStatus">
                 <input type="hidden" name="id" value="<?php echo $taak['id']?>">
-                <td><select name="status" id="status" onchange="submit();">
+                <td><select name="status" id="dropdown" onchange="submit();">
                     <option value="To Do" <?php if($taak['status']=="To Do") echo 'selected="selected"'; ?>>To Do</option>
                     <option value="Bezig" <?php if($taak['status']=="Bezig") echo 'selected="selected"'; ?>>Bezig</option>
                     <option value="Klaar" <?php if($taak['status']=="Klaar") echo 'selected="selected"'; ?>>Klaar</option>

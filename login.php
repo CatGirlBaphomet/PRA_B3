@@ -11,6 +11,8 @@
 	<link rel="icon" href="<?php echo $base_url; ?>/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="<?php echo $base_url; ?>/css/normalize.css">
 	<link rel="stylesheet" href="<?php echo $base_url; ?>/css/main.css">
+    <script src="https://kit.fontawesome.com/90971cfe75.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
 </head>
 
 <header>

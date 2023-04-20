@@ -51,7 +51,7 @@ if (!isset($_SESSION['user_id']))
             </div>
             <div class="form-group">
             <label for="status">Status:</label>
-                <select name="status" id="status">
+                <select name="status" id="dropdown">
                     <option value="To Do" <?php if($taak['status']=="To Do") echo 'selected="selected"'; ?>>To Do</option>
                     <option value="Bezig" <?php if($taak['status']=="Bezig") echo 'selected="selected"'; ?>>Bezig</option>
                     <option value="Klaar" <?php if($taak['status']=="Klaar") echo 'selected="selected"'; ?>>Klaar</option>
@@ -64,7 +64,7 @@ if (!isset($_SESSION['user_id']))
 
             <div class="form-group">
             <label for="color">Kleur:</label>
-                <select name="color" id="color">
+                <select name="color" id="dropdown">
                     <option value="rood" <?php if($taak['color']=="rood") echo 'selected="selected"'; ?>>Rood</option>
                     <option value="blauw" <?php if($taak['color']=="blauw") echo 'selected="selected"'; ?>>Blauw</option>
                     <option value="groen" <?php if($taak['color']=="groen") echo 'selected="selected"'; ?>>Groen</option>
